@@ -1,0 +1,2 @@
+# skeleton-master
+Interview task
