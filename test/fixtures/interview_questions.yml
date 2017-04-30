@@ -17,7 +17,7 @@ interview_<%= interview %>_<%= question %>:
 
 
 <% counter = 0 %>
-<% ['mangerial_experience', 'biggest_weakness', 'biggest_strength', 'google'].shuffle.each do |question| %>
+<% ['managerial_experience', 'biggest_weakness', 'biggest_strength', 'google'].shuffle.each do |question| %>
 <% counter += 1 %>
 manager_<%= question %>:
   interview: first_manager_interview
