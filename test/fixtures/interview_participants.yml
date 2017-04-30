@@ -7,58 +7,72 @@
 one_truck_manager:
   interviewer: fleet_manager
   interview: first_driver_interview
+  candidate: barney_rubble
 
 one_truck_hr:
   interviewer: hr
   interview: first_driver_interview
+  candidate: barney_rubble
 
 one_truck_union:
   interviewer: union
   interview: first_driver_interview
+  candidate: barney_rubble
 
 two_truck_manager:
   interviewer: fleet_manager
   interview: second_driver_interview
+  candidate: fred_flintstone
 
 two_truck_hr:
   interviewer: hr
   interview: second_driver_interview
+  candidate: fred_flintstone
 
 two_truck_union:
   interviewer: union
   interview: second_driver_interview
+  candidate: fred_flintstone
 
 one_lift_manager:
   interviewer: warehouse
   interview: first_forklift_interview
+  candidate: bill_snakey
 
 one_lift_hr:
   interviewer: hr
   interview: first_forklift_interview
+  candidate: bill_snakey
 
 one_lift_union:
   interviewer: union
   interview: first_forklift_interview
+  candidate: bill_snakey
 
 two_lift_manager:
   interviewer: warehouse
   interview: second_forklift_interview
+  candidate:
 
 two_lift_hr:
   interviewer: hr
   interview: second_forklift_interview
+  candidate: fred_flintstone
 
 two_lift_union:
   interviewer: union
   interview: second_forklift_interview
+  candidate: fred_flintstone
 
 manager_warehouse:
   interviewer: warehouse
   interview: first_manager_interview
+  candidate: fred_flintstone
 
 # Failure case
 manager_hr:
   interviewer: warehouse
   interview: hr
+  candidate: fred_flintstone
 
 

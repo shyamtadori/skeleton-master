@@ -4,10 +4,10 @@ class Interviewer < ApplicationRecord
   has_many :interviews, through: :interview_participants
 
   def upcoming_interviews
-  	self.interviews.upcoming(Time.zone.now).includes(:candidate, :questions)
+  	self.interviews.upcoming(Time.zone.now).includes(:candidates, :questions)
   end
 
   def upcoming_two_interviews
-  	self.interviews.upcoming_two(Time.zone.now).includes(:candidate, :questions)
+  	self.interviews.upcoming_two(Time.zone.now).includes(:candidates, :questions)
   end
 end

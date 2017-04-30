@@ -5,7 +5,7 @@ class InterviewerTest < ActiveSupport::TestCase
   	interviewer = interviewers(:hr)
 		interviews = interviewer.upcoming_two_interviews
 
-    assert_not_nil interviews.first.candidate.name
+    assert_not_equal 0,interviews.first.candidates.length
   end
 
   test "upcoming interviews with questions data" do
