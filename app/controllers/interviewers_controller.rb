@@ -9,7 +9,7 @@ class InterviewersController < ApplicationController
 		interviews = @interviewer.upcoming_two_interviews
 
 		render :status => 200,
-			  	 :json => interviews.as_json(:include=>[:candidate, :questions])
+			  	 :json => interviews.as_json(:include=>[:candidates, :questions])
 
 	end
 

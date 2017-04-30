@@ -11,7 +11,7 @@ class InterviewerControllerTest < ActionDispatch::IntegrationTest
  		interviewer = interviewers(:hr)
     get "/interviewers/#{interviewer.id}"
     json_response = JSON.parse(@response.body)
-    assert_not_nil json_response[0]['candidate']['name']
+    assert_not_equal 0,json_response[0]['candidates'].length
   end
 
   test "should get interviews with questions data" do
