@@ -10,6 +10,4 @@ class AnswerRatingTest < ActiveSupport::TestCase
     c = candidates(:bill_snakey)
     assert_equal c.rating, 5
   end
-
-  
 end
